@@ -8387,6 +8387,7 @@ async function triggerApprovalFlow() {
                 body: JSON.stringify({
                     recordId: record.Id,
                     skipPRApproval: needApproval? null : "Y",
+                    prNo: record.PRNo,
                 })
             }
         );
